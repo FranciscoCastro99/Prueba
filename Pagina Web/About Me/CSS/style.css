@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../IMG/Fondo2.jpg);
+    background-size: cover;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    overflow: hidden;
+}
+
+/* Video */
+
+.contenedorGrande{
+    position: relative;
+    height: 100vh;
+}
+.contenedorVideo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.contenedorVideo video{
+    position:relative;
+    top: 50%;
+    left: 50%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%,-50%);
+}
+
+/* Barra horizontal */
+
+.navegacion{
+    border: 1px solid black;
+    width: 100%;
+    height: 15%;
+    backdrop-filter: blur(1rem);
+}
+.navegacion .contenedor{
+    width:100%;
+    height:100%;
+    text-align: center;
+    display: flex;
+    align-self: center;
+}
+.navegacion .Imagen{
+    height: 100%;
+    width: 10%;
+}
+#logo1{
+    transform: translate(30px,-15px);
+    width: 15rem;
+    height: 15rem;
+    padding: 1.5rem;
+}
+.navegacion .lista{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+}
+.navegacion li{
+    display: grid;
+    place-content: center;
+    width: 15rem;
+    height: 100%;
+    font-size: 1.6rem;
+    list-style: none;
+    border: 2px solid transparent;
+    text-align: center;
+    transition: all 400ms ease;
+}
+
+/* Revisarcolor */
+.navegacion li:hover{
+    border-left:6px solid #2480c2;
+    background-color: rgba(0, 110, 255, 0.5);
+}
+.navegacion a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Revisar color */
+.navegacion a:hover{
+    color: aliceblue;
+}
+
+
+.navegacion .Page-About{
+    border-left:6px solid #2480c2;
+    background-color: rgba(0, 110, 255, 0.5);
+}
+
+.Page-About a{
+    color: antiquewhite;
+}
+
+.navegacion .menu{
+    transform: translate(1rem, 3rem);
+    height: 5rem;
+    width: 5rem;
+    display: grid;
+    place-content: center;
+    transition: all 500ms ease-in-out;
+    border-radius: 50%;
+}
+
+.navegacion .menu:hover{
+    background-color:rgba(255, 255, 255, 0.634);
+    border: 1px solid  rgba(0, 110, 255, 0.5);
+    cursor: pointer;
+}
+
+.navegacion img{
+    height: 100%;
+    width: 10rem;
+}
+
+.navegacion .menu img{
+    height: 2.5rem;
+    width: 2.5rem;
+    cursor: pointer;
+}
+
+
+/* Contenido */
+
+
+
+
+
+
+
+/* footer */
+footer{
+    border-top: 0.2rem solid black;
+    overflow: hidden;
+    height: 10%;
+    width: 100%;
+    backdrop-filter: blur(1.5rem);
+}
+
+footer .footer-contenedor{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+footer .listados_de_redes{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    align-items: center;
+    transform: translateX(3.5rem);
+}
+footer .listados_de_redes ul{
+    text-decoration: none;
+}
+
+footer .listados_de_redes li{
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+    transition: all 500ms ease-in-out;
+}
+
+footer .listados_de_redes li:hover{
+    background-color:rgba(255, 255, 255, 0.634);
+    border: 1px solid  rgba(0, 110, 255, 0.5);
+}
+
+footer .listados_de_redes a{
+    list-style: none;
+
+}
+
+footer .listados_de_redes img{
+    transform: translate(-1.2rem, -1.3rem);
+    height: 2.5rem;
+    width: 2.5rem;
+}
+

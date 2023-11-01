@@ -1,0 +1,123 @@
+.contenedor-de-contenido{
+    height: 75%;
+    width: 100%; 
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.contenedor-de-contenido::-webkit-scrollbar{
+    background-color: transparent;
+}
+.contenedor-de-contenido::-webkit-scrollbar-button{
+    background-color: transparent;
+}
+
+h2{
+    padding: 1rem ;
+    text-align: center;
+    font-size: 5rem;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    animation: titulos1 25s, titulos2 20s;
+}
+
+.contenedor-de-contenido .lista-slider img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    padding-left: 0.25rem;
+    animation: slide 60s infinite alternate-reverse ;
+}
+.contenedor-slide1{
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+.slide{
+    width: 50rem;
+    height: 45rem;
+    position: relative;
+    animation: textoMovimiento 10s;
+
+}
+.lista-slider{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 50rem;
+    overflow: hidden;
+}
+
+.parrafo{
+    width: 50%;
+    border: 0.2rem solid black;
+    border-radius: 4rem;
+    margin-right: 4rem;
+    margin-left: 4rem;
+    padding: 4rem;
+    backdrop-filter: blur(2rem);
+    animation: textoMovimiento 10s;
+}
+
+.parrafo .parrafo-personal{
+    font-size: 2.1rem;
+    text-align: center;
+
+}
+
+
+@keyframes slide {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    20%{margin-left: -100%;}
+    40%{margin-left: -200%;}
+
+    40%{margin-left: -200%;}
+    60%{margin-left: -300%;}
+
+    60%{margin-left: -300%;}
+    80%{margin-left: -400%;}
+
+    80%{margin-left: -400%;}
+    100%{margin-left:-500%;}
+}
+
+
+@keyframes titulos1 {
+    0%{
+        color: black;
+    }
+    50%{
+        color: rgb(17, 120, 172);
+    }
+    100% {
+        color: black;
+    }
+}
+
+@keyframes titulos2 {
+    0%{
+        transform: translateX(45%);
+        transform: scale(0%);
+    }
+    100%{
+        transform: translateX(0%);
+        transform: scale(100%);
+    }
+}
+
+@keyframes textoMovimiento {
+    from{
+        transform: translateY(100%);
+        transform: scale(0%);
+    }
+
+    to{
+        transform: translateY(0);
+        transform: scale(100%);
+    }
+}
